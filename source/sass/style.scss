@@ -1,4 +1,9 @@
-// Начните писать стили здесь
-.page__body {
-  background-color: tomato;
-}
+// Globals
+
+@use "./globals/fonts.scss";
+@use "./globals/common.scss";
+@use "./globals/variables.scss" as *;
+
+// Blocks
+
+@use "./blocks/page.scss";
