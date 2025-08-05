@@ -2,8 +2,12 @@
 
 @use "./globals/fonts.scss";
 @use "./globals/common.scss";
-@use "./globals/variables.scss" as *;
+@use "./globals/variables.scss";
 
 // Blocks
 
 @use "./blocks/page.scss";
+@use "./blocks/page-header.scss";
+@use "./blocks/page-main.scss";
+@use "./blocks/promo.scss";
+@use "./blocks/diets.scss";

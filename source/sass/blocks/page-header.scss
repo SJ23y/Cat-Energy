@@ -1,0 +1,10 @@
+.page-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: fit-content;
+  align-items: center;
+  min-width: 280px;
+  padding: 10px 20px 18px;
+  margin: 0 auto;
+}
