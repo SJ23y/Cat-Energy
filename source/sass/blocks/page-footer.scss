@@ -1,0 +1,37 @@
+@use "../globals/variables.scss" as *;
+
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  padding-top: 39px;
+  padding-bottom: 22px;
+  margin: 0 auto;
+
+  background-color: $basic-gray;
+}
+
+.page-footer__logo {
+  margin-bottom: 32px;
+}
+
+.page-footer__socials-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 20px;
+  border-top: 1px solid $light-gray;
+  margin-bottom: 21px;
+}
+
+.page-footer__developer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 20px;
+  border-top: 1px solid $light-gray;
+}

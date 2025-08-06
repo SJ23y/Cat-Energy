@@ -1,0 +1,13 @@
+@use "../globals/variables.scss" as *;
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: $basic-green;
+  font-family: $font-heading;
+  color: $basic-white;
+  text-decoration: none;
+  text-transform: uppercase;
+}

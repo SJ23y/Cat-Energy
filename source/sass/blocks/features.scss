@@ -1,0 +1,29 @@
+@use "../globals/variables.scss" as *;
+
+.features {
+  margin-bottom: 49px;
+}
+
+.features__title {
+  margin-bottom: 40px;
+}
+
+.features__item {
+  position: relative;
+  padding-left: 80px;
+  margin-bottom: 20px;
+}
+
+.features__item::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 100%;
+  background-color: $basic-green;
+  content: "";
+}
+
+.features__item:last-child {
+  margin-bottom: 0;
+}

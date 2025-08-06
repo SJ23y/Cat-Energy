@@ -1,0 +1,15 @@
+@use "../globals/variables.scss" as *;
+
+.site-menu__item {
+  padding: 22px 0 24px;
+}
+
+.site-menu__link {
+  font-family: $font-heading;
+  font-size: 20px;
+  line-height: 20px;
+  color: $basic-black;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+}

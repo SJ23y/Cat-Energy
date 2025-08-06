@@ -1,0 +1,13 @@
+@use "../globals/variables.scss" as *;
+
+.switcher__button {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  background-color: transparent;
+  border-color: transparent;
+  color: $basic-black;
+  font-weight: 400;
+  cursor: pointer;
+}

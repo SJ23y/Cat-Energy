@@ -1,13 +1,23 @@
 // Globals
 
-@use "./globals/fonts.scss";
 @use "./globals/common.scss";
+@use "./globals/fonts.scss";
 @use "./globals/variables.scss";
 
 // Blocks
 
+@use "./blocks/button.scss";
+@use "./blocks/contacts.scss";
+@use "./blocks/developer.scss";
+@use "./blocks/diets.scss";
+@use "./blocks/features.scss";
+@use "./blocks/form-page.scss";
+@use "./blocks/live-example.scss";
 @use "./blocks/page.scss";
 @use "./blocks/page-header.scss";
 @use "./blocks/page-main.scss";
+@use "./blocks/page-footer.scss";
 @use "./blocks/promo.scss";
-@use "./blocks/diets.scss";
+@use "./blocks/site-menu.scss";
+@use "./blocks/switcher.scss";
+@use "./blocks/visually-hidden.scss";
