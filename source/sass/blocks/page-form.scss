@@ -1,0 +1,28 @@
+@use "../globals/variables.scss" as *;
+
+
+.page-form__title {
+  line-height: 1;
+  margin-bottom: 37px;
+}
+
+.page-form__description {
+  align-items: start;
+  margin: 0;
+  padding: 64px 67px 0 70px;
+
+  font-family: $font-heading;
+  font-size: 14px;
+  line-height: 18px;
+  color: $basic-black;
+  text-transform: uppercase;
+  margin-bottom: 39px;
+}
+
+.page-form__footnote {
+  font-family: $font-body;
+  font-size: 14px;
+  line-height: 16px;
+  color: $basic-black;
+  text-transform: none;
+}

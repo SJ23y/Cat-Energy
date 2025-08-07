@@ -1,0 +1,15 @@
+@use "../globals/variables.scss" as *;
+
+.products {
+  margin-bottom: 25px;
+}
+
+.products__link {
+  text-decoration: none;
+}
+
+.products__stats {
+  font-family: $font-body;
+  font-size: 12px;
+  line-height: 16px;
+}

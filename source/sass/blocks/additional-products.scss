@@ -1,0 +1,11 @@
+@use "../globals/variables.scss" as *;
+
+.additional-products {
+  margin-bottom: 35px;
+}
+
+.additional-products__stats {
+  font-family: $font-body;
+  font-size: 14px;
+  line-height: 20px;
+}

@@ -1,0 +1,32 @@
+@use "../globals/variables.scss" as *;
+
+.field-group__heading {
+  margin: 0;
+  padding: 0;
+
+  font-family: $font-heading;
+  font-size: 36px;
+  line-height: 1;
+  color: $basic-black;
+  text-transform: none;
+  font-weight: 400;
+}
+
+.field-group__input {
+  padding: 13px 15px;
+  min-height: 45px;
+}
+
+.field-group__input::placeholder,
+.field-group__textarea::placeholder {
+  font-family: $font-heading;
+  font-size: 20px;
+  line-height: normal;
+  text-transform: uppercase;
+  color: $special-dark-gray-2;
+}
+
+.field-group__textarea::placeholder {
+  font-size: 16px;
+  line-height: 18px;
+}

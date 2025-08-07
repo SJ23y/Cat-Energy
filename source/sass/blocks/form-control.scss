@@ -1,0 +1,11 @@
+@use "../globals/variables.scss" as *;
+
+.form-control {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 26px;
+  height: 26px;
+  border: 1px solid $special-gray;
+}

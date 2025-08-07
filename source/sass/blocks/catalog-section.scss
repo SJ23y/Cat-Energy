@@ -1,0 +1,15 @@
+@use "../globals/variables.scss" as *;
+
+.catalog-section__title {
+  font-family: $font-heading;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $special-dark-gray-2;
+  text-transform: uppercase;
+}
+
+
+.catalog-section__title--short {
+  line-height: 1;
+}

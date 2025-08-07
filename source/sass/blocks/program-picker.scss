@@ -1,0 +1,15 @@
+.program-picker {
+  position: relative;
+  padding-top: 22px;
+  margin-bottom: 26px;
+}
+
+
+.program-picker__item:not(:last-child) {
+  margin-bottom: 13px;
+}
+
+.program-picker__label {
+  position: relative;
+  padding-left: 45px;
+}

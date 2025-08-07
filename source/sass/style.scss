@@ -6,18 +6,32 @@
 
 // Blocks
 
+@use "./blocks/additional-products.scss";
+@use "./blocks/additional-info.scss";
 @use "./blocks/button.scss";
+@use "./blocks/cat-info.scss";
+@use "./blocks/catalog-section.scss";
+@use "./blocks/comment.scss";
 @use "./blocks/contacts.scss";
 @use "./blocks/developer.scss";
 @use "./blocks/diets.scss";
 @use "./blocks/features.scss";
-@use "./blocks/form-page.scss";
+@use "./blocks/field-group.scss";
+@use "./blocks/form.scss";
+@use "./blocks/form-control.scss";
 @use "./blocks/live-example.scss";
 @use "./blocks/page.scss";
 @use "./blocks/page-header.scss";
 @use "./blocks/page-main.scss";
+@use "./blocks/page-form.scss";
+@use "./blocks/page-catalog.scss";
 @use "./blocks/page-footer.scss";
+@use "./blocks/pagination.scss";
+@use "./blocks/products.scss";
+@use "./blocks/program-picker.scss";
 @use "./blocks/promo.scss";
 @use "./blocks/site-menu.scss";
+@use "./blocks/special-offer.scss";
 @use "./blocks/switcher.scss";
+@use "./blocks/owner-contacts.scss";
 @use "./blocks/visually-hidden.scss";

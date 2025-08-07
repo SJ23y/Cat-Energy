@@ -11,3 +11,8 @@
   text-decoration: none;
   text-transform: uppercase;
 }
+
+.button--secondary {
+  background-color: $basic-gray;
+  color: $special-dark-gray;
+}

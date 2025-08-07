@@ -1,0 +1,20 @@
+@use "../globals/variables.scss" as *;
+
+.special-offer {
+  min-height: 289px;
+
+  background-color: $basic-green;
+  background-image: url("../../img/special-offer/back.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  color: $basic-white;
+}
+
+.special-offer__title {
+  margin: 0;
+  padding: 0;
+
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}

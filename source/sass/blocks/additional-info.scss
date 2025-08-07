@@ -1,0 +1,15 @@
+
+.additional-info {
+  padding-top: 34px;
+  margin-bottom: 34px;
+}
+
+
+.additional-info__item:not(:last-child) {
+  margin-bottom: 13px;
+}
+
+.additional-info__label {
+  position: relative;
+  padding-left: 44px;
+}

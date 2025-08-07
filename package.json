@@ -14,9 +14,9 @@
     "stylelint": "13.13.1",
     "stylelint-config-htmlacademy": "0.1.11"
   },
-    "overrides": {
+  "overrides": {
     "es5-ext": "0.10.53"
-    },
+  },
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
@@ -42,5 +42,8 @@
   "engines": {
     "node": "^16"
   },
-  "type": "module"
+  "type": "module",
+  "volta": {
+    "node": "16.20.2"
+  }
 }
