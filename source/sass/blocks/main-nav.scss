@@ -1,0 +1,42 @@
+@use "../globals/variables.scss" as *;
+
+.main-nav {
+  width: 7.5%;
+  aspect-ratio: 24 /16;
+
+  @media (min-width: $tablet-width) {
+    width: 57.3%;
+    margin-left: auto;
+    aspect-ratio: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 43.06%;
+    background-color: $basic-green;
+    aspect-ratio: auto;
+  }
+}
+
+
+.main-nav__list {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+
+.main-nav__toggle {
+  display: none;
+
+  @media (max-width: $mobile-device-only) {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+  }
+}

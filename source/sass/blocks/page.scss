@@ -25,7 +25,18 @@
 }
 
 .page__container {
-  padding: 0 20px;
+  width: 81.25%;
+  min-width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 92.1875%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 88.89%;
+    max-width: 1440px;
+  }
 }
 
 .page__list {
