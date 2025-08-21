@@ -7,6 +7,10 @@
   font-weight: 400;
   background-color: $basic-white;
   color: $special-dark-gray;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .page__body {
