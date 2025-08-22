@@ -1,46 +1,121 @@
 @use "../globals/variables.scss" as *;
 
 .diets {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 6.25%;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 5.859375%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 4.93%;
+  }
+}
+
+.diets__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    row-gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5.55%;
+  }
 }
 
 .diets__item {
+  display: grid;
+  grid-template-columns: 22.1875% 1fr;
+  grid-template-areas: "image title"
+                       "info info"
+                       "button button";
+  row-gap: 15px;
   background-color: $basic-gray;
-  padding: 21px 20px 18px;
-}
+  padding: 6.5625% 6.25% 5.625%;
 
-.diets__item:not(:last-child) {
-  margin-bottom: 30px;
+  @media (min-width: $tablet-width) and (max-width: $tablet-device-only) {
+    grid-template-columns: 1fr 37.5%;
+    row-gap: 24px;
+    grid-template-areas: "title image"
+                       "info image"
+                       "button image";
+    padding: 10% 3.6458% 5.625% 6.77%;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 162px 1fr;
+    padding: 41px 52px 55px;
+    row-gap: 23px;
+  }
 }
 
 .diets__title {
+  grid-area: title;
+  align-self: center;
   margin: 0;
   padding: 0;
-  margin-bottom: 29px;
   font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .diets__text {
-  padding: 0;
+  grid-area: info;
   margin: 0;
-  padding-bottom: 23px;
-  margin-bottom: 15px;
+  padding: 7px 0 23px;
   border-bottom: 1px solid $light-gray;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-bottom: 24px;
+    border: none;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 16px 0 0;
+  }
+}
+
+.diets__image {
+  grid-area: image;
+
+  @media (min-width: $tablet-width) {
+    width: 268px;
+    height: 211px;
+    object-fit: contain;
+    padding-top: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+    height: 106px;
+    object-fit: contain;
+  }
 }
 
 .diets__link {
+  grid-area: button;
   font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
   font-size: 16px;
-  line-height: 16px;
+  line-height: 1;
   text-decoration: none;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
