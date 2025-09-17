@@ -6,6 +6,7 @@
 
 // Blocks
 
+@use "./blocks/page-main.scss";
 @use "./blocks/additional-products.scss";
 @use "./blocks/additional-info.scss";
 @use "./blocks/button.scss";
@@ -23,7 +24,6 @@
 @use "./blocks/main-nav.scss";
 @use "./blocks/page.scss";
 @use "./blocks/page-header.scss";
-@use "./blocks/page-main.scss";
 @use "./blocks/page-form.scss";
 @use "./blocks/page-catalog.scss";
 @use "./blocks/page-footer.scss";

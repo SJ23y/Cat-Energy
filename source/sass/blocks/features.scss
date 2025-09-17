@@ -1,17 +1,49 @@
 @use "../globals/variables.scss" as *;
 
 .features {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 49px;
 }
 
 .features__title {
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    align-self: start;
+    margin-bottom: 32px;
+  }
+}
+
+.features__list {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 383px 1fr;
+    row-gap: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 37px;
+  }
 }
 
 .features__item {
   position: relative;
+  display: flex;
   padding-left: 80px;
   margin-bottom: 20px;
+  min-height: 60px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    min-height: 280px;
+    padding: 0;
+    margin: 0;
+    padding-top: 151px;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .features__item::before {
@@ -19,11 +51,59 @@
   top: 0;
   left: 0;
   width: 60px;
-  height: 100%;
+  aspect-ratio: 1 / 1;
   background-color: $basic-green;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   content: "";
+
+  @media (min-width: $tablet-width) {
+    top: 40px;
+    width: 80px;
+  }
+}
+
+.features__item:first-child::before {
+  background-image: url('../../img/features/icon-leaf.svg');
+}
+
+.features__item:nth-child(2)::before {
+  background-image: url('../../img/features/icon-tub.svg');
+}
+
+.features__item:nth-child(3)::before {
+  background-image: url('../../img/features/icon-cutlery.svg');
+}
+
+.features__item:last-child::before {
+  background-image: url('../../img/features/alarm-icon.svg');
 }
 
 .features__item:last-child {
   margin-bottom: 0;
+}
+
+.features__item-number {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    left: 113px;
+    z-index: -1;
+    display: block;
+    height: 100%;
+    font-family: $font-heading;
+    font-size: 280px;
+    line-height: 280px;
+    color: $basic-gray;
+    content: "";
+  }
+}
+
+
+.features__text {
+  @media (min-width: $tablet-width) {
+    width: 245px;
+  }
 }
