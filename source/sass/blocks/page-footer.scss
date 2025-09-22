@@ -1,6 +1,11 @@
 @use "../globals/variables.scss" as *;
 
 .page-footer {
+  width: 100%;
+  background-color: $basic-gray;
+}
+
+.page-footer__container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -10,21 +15,73 @@
   padding-bottom: 22px;
   margin: 0 auto;
 
-  background-color: $basic-gray;
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    padding-top: 58px;
+    padding-bottom: 55px;
+  }
 }
 
 .page-footer__logo {
   margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
-.page-footer__socials-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.page-footer__socials {
   width: 100%;
   padding-top: 20px;
   border-top: 1px solid $light-gray;
   margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    padding: 0;
+    margin: 0 auto;
+    border: none;
+  }
+}
+
+.page-footer__socials-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 34px;
+  row-gap: 20px;
+  width: 130px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 163px;
+    margin: 0;
+    column-gap: 28px;
+  }
+}
+
+.page-footer__socials-item {
+  align-self: center;
+}
+
+.page-footer__socials-vk {
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 22px;
+  }
+}
+
+.page-footer__socials-insta {
+  @media (min-width: $tablet-width) {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+.page-footer__socials-fb {
+  @media (min-width: $tablet-width) {
+    width: 28px;
+    height: 33px;
+  }
 }
 
 .page-footer__developer {
@@ -34,4 +91,10 @@
   width: 100%;
   padding-top: 20px;
   border-top: 1px solid $light-gray;
+
+  @media (min-width: $tablet-width) {
+    width: 163px;
+    padding: 0;
+    border: none;
+  }
 }
