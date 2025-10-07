@@ -1,3 +1,14 @@
+
+@use "../globals/variables.scss" as *;
+
 .cat-info {
-  margin-bottom: 27px;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 24px;
+  margin-bottom: 22px;
+  border: none;
+  border-bottom: 1px solid $light-gray;
+  color: $special-dark-gray;
 }
+
+

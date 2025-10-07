@@ -9,9 +9,9 @@
   padding-top: 8.4375%;
   margin-bottom: 6.25%;
   background-image: url("../../img/promo/promo-back.jpg"),
-                    linear-gradient(to bottom, $basic-green 94.375vw, $basic-white 94.375vw);
+                    linear-gradient(to bottom, rgba($basic-green, 0.85) 302px, $basic-white 302px);
   background-position: top 0 left 50%, center;
-  background-size: 100% 94.375vw, 100%;
+  background-size: 320px 302px, 100%;
   background-repeat: no-repeat, no-repeat;
   font-family: $font-heading;
   text-transform: uppercase;

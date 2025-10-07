@@ -1,9 +1,19 @@
+@use "../globals/variables.scss" as *;
+
 .program-picker {
   position: relative;
-  padding-top: 22px;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 19px;
   margin-bottom: 26px;
+  border: none;
+  border-bottom: 1px solid $light-gray;
+  color: $special-dark-gray-2;
 }
 
+.program-picker__list {
+  width: 100%;
+}
 
 .program-picker__item:not(:last-child) {
   margin-bottom: 13px;

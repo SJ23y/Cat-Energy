@@ -1,4 +1,8 @@
+@use "../globals/variables.scss" as *;
+
 .comment {
+  width: 100%;
   padding-top: 38px;
   margin-bottom: 23px;
+  color: $special-dark-gray;
 }

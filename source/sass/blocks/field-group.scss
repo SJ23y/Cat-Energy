@@ -1,5 +1,21 @@
 @use "../globals/variables.scss" as *;
 
+.field-group {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.field-group__label {
+  display: flex;
+  align-items: center;
+  margin: 0 auto 13px;
+}
+
+.field-group__label:last-child {
+  margin-bottom: 0;
+}
+
 .field-group__heading {
   margin: 0;
   padding: 0;
@@ -12,7 +28,12 @@
   font-weight: 400;
 }
 
+.field-group__label-text {
+  margin-right: 12px;
+}
+
 .field-group__input {
+  flex-grow: 1;
   padding: 13px 15px;
   min-height: 45px;
 }
@@ -26,7 +47,19 @@
   color: $special-dark-gray-2;
 }
 
+.field-group__textarea {
+  margin: 0 auto;
+  padding: 9px 15px;
+  font-size: 16px;
+  line-height: 18px;
+  color: $special-dark-gray;
+}
+
 .field-group__textarea::placeholder {
   font-size: 16px;
   line-height: 18px;
+}
+
+.field-group__list {
+  width: 100%;
 }
