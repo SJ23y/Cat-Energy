@@ -6,4 +6,8 @@
   padding-top: 35px;
   margin-bottom: 24px;
   color: $special-dark-gray;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 76px;
+  }
 }

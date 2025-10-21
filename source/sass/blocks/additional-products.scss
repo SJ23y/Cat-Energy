@@ -1,8 +1,14 @@
 @use "../globals/variables.scss" as *;
 
 .additional-products {
+  padding-top: 34px;
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 76px;
+  }
 }
+
 
 .additional-products__stats {
   font-family: $font-body;

@@ -10,11 +10,32 @@
 }
 
 
+.additional-info__list {
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40px;
+    row-gap: 32px;
+    margin: 0 auto;
+  }
+
+}
+
 .additional-info__item:not(:last-child) {
   margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .additional-info__label {
   position: relative;
-  padding-left: 44px;
+  padding-left: 50px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 60px;
+  }
 }

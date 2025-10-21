@@ -13,6 +13,22 @@
 
 .program-picker__list {
   width: 100%;
+
+  @media(min-width: $tablet-width) {
+    width: 92.1875%;
+    margin: 0 auto;
+    padding: 25px 28px 29px;
+    border: 1px solid $light-gray-4;
+
+  }
+}
+
+.program-picker__item {
+    min-height: 30px;
+
+  @media(min-width: $tablet-width) {
+    min-height: 40px;
+  }
 }
 
 .program-picker__item:not(:last-child) {
@@ -21,5 +37,11 @@
 
 .program-picker__label {
   position: relative;
-  padding-left: 45px;
+  padding-left: 50px;
+
+  @media(min-width: $tablet-width) {
+    width: 100%;
+    padding: 0;
+    padding-left: 60px;
+  }
 }

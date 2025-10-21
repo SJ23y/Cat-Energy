@@ -30,6 +30,10 @@
 
 .field-group__label-text {
   margin-right: 12px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 14px;
+  }
 }
 
 .field-group__input {
@@ -60,6 +64,3 @@
   line-height: 18px;
 }
 
-.field-group__list {
-  width: 100%;
-}

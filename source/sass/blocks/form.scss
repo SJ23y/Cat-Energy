@@ -5,6 +5,13 @@
   font-size: 20px;
   line-height: normal;
   text-transform: uppercase;
+
+  @media(min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+  }
 }
 
 .form__group {
@@ -12,8 +19,6 @@
 }
 
 .form__radio-control {
-  width: 30px;
-  height: 30px;
   border-radius: 50%;
 }
 
@@ -22,4 +27,11 @@
   margin: 0 auto;
   font-size: 16px;
   line-height: 20px;
+
+  @media(min-width: $tablet-width) {
+    width: 36.71875%;
+    margin: 0;
+    margin-left: 3.90625%;
+    margin-right: 10.546875%;
+  }
 }
