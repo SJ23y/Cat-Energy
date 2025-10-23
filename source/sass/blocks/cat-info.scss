@@ -9,6 +9,15 @@
   border: none;
   border-bottom: 1px solid $light-gray;
   color: $special-dark-gray;
-}
 
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 569px;
+    flex-grow: 1;
+    margin: 0 80px 89px auto;
+  }
+}
 

@@ -10,4 +10,23 @@
   @media (min-width: $tablet-width) {
     padding-top: 76px;
   }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.owner-contacts__label {
+  @media (min-width: $desktop-width) {
+    max-width: 569px;
+    flex-grow: 1;
+  }
+}
+
+.owner-contacts__label:nth-child(2n) {
+  @media (min-width: $desktop-width) {
+    margin-right: 78px;
+  }
 }

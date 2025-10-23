@@ -98,12 +98,12 @@
         <fieldset class="form__group field-group owner-contacts">
           <legend class="field-group__heading">Контактные данные (владельца кота)</legend>
 
-          <label class="page__container field-group__label form__age-label">
+          <label class="page__container field-group__label owner-contacts__label">
             <span class="field-group__label-text form__age-text">E-mail:*</span>
             <input class="form__age-input field-group__input" type="email" name="email" placeholder="кuklachev@gmail.com" required>
           </label>
 
-          <label class="page__container field-group__label form__age-label">
+          <label class="page__container field-group__label owner-contacts__label">
             <span class="field-group__label-text form__age-text">Телефон:*</span>
             <input class="form__age-input field-group__input"  type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
           </label>
@@ -153,9 +153,11 @@
 
           </ul>
         </fieldset>
+        <div class="form__footer page__container">
+          <button class="page__container form__submit-button button">Отправить заявку</button>
+          <p class="page-form__footnote form__footnote">* — Обязательные поля</p>
+        </div>
 
-        <button class="page__container form__submit-button button">Отправить заявку</button>
-        <p class="page-form__footnote">* — Обязательные поля</p>
 
       </form>
     </section>

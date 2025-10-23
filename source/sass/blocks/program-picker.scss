@@ -9,6 +9,18 @@
   border: none;
   border-bottom: 1px solid $light-gray;
   color: $special-dark-gray-2;
+
+  @media(min-width: $desktop-width) {
+    border: none;
+  }
+
+  @media(min-width: $desktop-width) {
+    max-width: 568px;
+    flex-grow: 1;
+    margin-bottom: 89px;
+    margin-right: auto;
+  }
+
 }
 
 .program-picker__list {
